@@ -1,26 +1,30 @@
-import { useState } from "react"
+import { useState } from 'react'
 
-import { linguagens } from "../linguagens"
+import adBanner from '../../../../../../imgs/banner ad-turbos.png'
+import { meusProjetos } from '../meusProjetos'
 
-import { Wrapper, Card, Icon, Title } from "./style"
+import { Wrapper, Card, Img, Overlay, Titulo, Descricao, Tecnologias } from "./style"
 
 const Cards = () => {
 
-    const [mouseIn, setMouseIn] = useState()
+    const [hover, setHover] = useState()
+
+    const handleHover = (state) => {
+        setHover(state)
+    }
 
     return (
         <>
             <Wrapper>
-                {linguagens.map((elem, index) => {
+                {meusProjetos.map((elem, index) => {
                     return (
-                        <Card
-                            key={index}
-                            onMouseEnter={() => setMouseIn(index)}
-                            onMouseLeave={() => setMouseIn(undefined)}
-                            hover={mouseIn === index ? "true" : "false"}
-                        >
-                            <Title hover={mouseIn === index ? "true" : "false"}>{elem.nome}</Title>
-                            <Icon hover={mouseIn === index ? "true" : "false"}>{elem.icon}</Icon>
+                        <Card onMouseEnter={() => handleHover(index)} onMouseLeave={() => handleHover(undefined)}>
+                            <Img src={elem.foto} alt="" />
+                            <Overlay hover={hover === index ? "true" : "false"}>
+                                <Titulo>{elem.nome}</Titulo>
+                                <Descricao>{elem.descricao}</Descricao>
+                                <Tecnologias>{elem.tecnologias}</Tecnologias>
+                            </Overlay>
                         </Card>
                     )
                 })}

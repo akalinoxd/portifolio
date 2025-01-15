@@ -1,5 +1,6 @@
 import Header from "./components/Header"
 import Projetos from "./components/Projetos"
+import Habilidades from "./components/Habilidades"
 
 import { Wrapper, Container } from "./style"
 
@@ -9,6 +10,7 @@ const Main = () => {
             <Container>
                 <Header />
                 <Projetos />
+                <Habilidades />
             </Container>
         </Wrapper>
     )

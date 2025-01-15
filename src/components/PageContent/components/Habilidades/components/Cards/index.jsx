@@ -1,17 +1,27 @@
+import { useState } from "react"
+
 import { linguagens } from "../linguagens"
 
-import { Wrapper } from "./style"
+import { Wrapper, Card, Icon, Title } from "./style"
 
 const Cards = () => {
+
+    const [mouseIn, setMouseIn] = useState()
+
     return (
         <>
             <Wrapper>
                 {linguagens.map((elem, index) => {
                     return (
-                        <div key={index}>
-                            <div>{elem.icon}</div>
-                            <div>{elem.nome}</div>
-                        </div>
+                        <Card
+                            key={index}
+                            onMouseEnter={() => setMouseIn(index)}
+                            onMouseLeave={() => setMouseIn(undefined)}
+                            hover={mouseIn === index ? "true" : "false"}
+                        >
+                            <Title hover={mouseIn === index ? "true" : "false"}>{elem.nome}</Title>
+                            <Icon hover={mouseIn === index ? "true" : "false"}>{elem.icon}</Icon>
+                        </Card>
                     )
                 })}
             </Wrapper>

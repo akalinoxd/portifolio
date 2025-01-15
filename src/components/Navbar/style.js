@@ -21,6 +21,7 @@ export const Wrapper = styled.section`
     }};
     top: 0;
     height: 90px;
+    z-index: 999;
 `
 
 export const Container = styled.div`

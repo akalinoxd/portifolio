@@ -3,54 +3,55 @@ import styled from "styled-components";
 export const Wrapper = styled.div`
     color: white;
     display: flex;
-    gap: 50px;
+    flex-wrap: wrap;
     justify-content: center;
+    gap: 25px;
+`
+export const Card = styled.div`
+    width: 600px;
+    height: 300px;
+    border-radius: 5px;
 `
 
-export const Card = styled.div`
-    width: ${props => {
-        if(props.hover === "true"){
-            return "140px"
-        }else if (props.hover === "false"){
-            return '120px'
-        }
-    }};
-    height: ${props => {
-        if(props.hover === "true"){
-            return "110px"
-        }else if (props.hover === "false"){
-            return '100px'
-        }
-    }};
-    background-color: #323751;
-    display: flex;
-    flex-direction: column;
-    justify-content: end;
-    align-items: center;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
+export const Img = styled.img`
+    position: absolute;
+    width: 600px;
+    height: 300px;
+    border-radius: 5px 5px 0 0;
     border-bottom: 2px solid #87F1FF;
 `
 
-export const Icon = styled.div`
-    font-size: ${props => {
-        if(props.hover === "true"){
-            return "55px"
-        }else if (props.hover === "false"){
-            return '50px'
+export const Overlay = styled.div`
+    position: absolute;
+    width: 600px;
+    height: 300px;
+    background-color: ${({hover}) => {
+        if(hover === "true"){
+            return "rgba(0, 0, 0, 0.65)"
+        }else if(hover === "false"){
+            return "none"
         }
     }};
-    text-align: center;
+    display: ${({hover}) => {
+        if(hover === "true"){
+            return "block"
+        }else if(hover === "false"){
+            return "none"
+        }
+    }};
+    padding: 20px;
+    box-sizing: border-box;
+    font-family: "Roboto Flex";
 `
 
-export const Title = styled.div`
-    font-size: ${props => {
-        if(props.hover === "true"){
-            return "25px"
-        }else if (props.hover === "false"){
-            return '20px'
-        }
-    }};
-    text-align: center;
-    font-family: 'Jua';
+export const Titulo = styled.h2`
+    font-size: 38px;
+`
+
+export const Descricao = styled.p`
+    font-size: 20px;
+`
+
+export const Tecnologias = styled.div`
+    font-size: 25px;
 `
