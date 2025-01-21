@@ -1,5 +1,7 @@
 import { FaGithubAlt, FaLinkedin, FaInstagram } from "react-icons/fa";
 
+import perfil from '../../../../imgs/foto perfil.jpg'
+
 import { Wrapper, Container, Photo, Title, SubTitle, Description, Links } from './style'
 
 const Header = () => {
@@ -7,16 +9,16 @@ const Header = () => {
         <>
             <Wrapper id='header'>
                 <Container>
-                    <Photo></Photo>
+                    <Photo src={perfil}></Photo>
                     <Title>
                         Olá, eu sou o <span>João</span>
                     </Title>
                     <SubTitle>
                         Desenvolvedor <span>Front-end</span>
                     </SubTitle>
-                    <Description>
+                    {/* <Description>
                         Sou desenvolvedor há 1 ano e minha linguagem de maior domínio é <span>JavaScript</span>, com um foco especial em <span>React</span>. :)
-                    </Description>
+                    </Description> */}
                     <Links>
                         <a href="https://github.com/akalinoxd" target="_blank"><FaGithubAlt /></a>
                         <a href="https://www.linkedin.com/in/joaovitor-frontend-dev/" target="_blank"><FaLinkedin /></a>

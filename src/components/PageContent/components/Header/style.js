@@ -17,13 +17,14 @@ export const Container = styled.div`
     flex-direction: column;
 `
 
-export const Photo = styled.div`
+export const Photo = styled.img`
     background-color: white;
     width: 300px;
     height: 300px;
     border-radius: 300px;
     margin: 50px 0;
-    box-shadow: 0px 10px 10px black;
+    box-shadow: 0px 10px 10px rgb(54, 64, 92);
+    border: none;
 `
 
 export const Title = styled.h1`
