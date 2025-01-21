@@ -8,18 +8,21 @@ export const meusProjetos = [
         nome: "AD Turbos",
         descricao: "",
         tecnologias: [<FaWordpress />],
-        foto: adBanner
+        foto: adBanner,
+        redirect: "https://adturbos.com.br/"
     },
     {
         nome: "Imoveis SA",
         descricao: "",
         tecnologias: [<FaReact />, <SiJavascript />, <SiMysql />, <FaDocker />],
-        foto: adBanner
+        foto: adBanner,
+        redirect: "https://github.com/Will-Maxwell-yc/projeto-imoveis-sa"
     },
     {
         nome: "Midway Creator",
         descricao: "",
         tecnologias: [<FaReact />, <SiJavascript />],
-        foto: adBanner 
+        foto: adBanner,
+        redirect: "https://github.com/Will-Maxwell-yc/site-midway"
     },
 ]
