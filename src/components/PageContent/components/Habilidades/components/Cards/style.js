@@ -1,7 +1,7 @@
 import styled, { keyframes } from "styled-components";
 
 export const Wrapper = styled.div`
-    height: 150px;
+    height: 80%;
     color: white;
     display: flex;
     gap: 50px;

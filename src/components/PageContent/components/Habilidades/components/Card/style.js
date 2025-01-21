@@ -57,6 +57,7 @@ export const Wrapper = styled.div`
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
     border-bottom: 2px solid #87F1FF;
+    cursor: pointer;
 `
 
 const mouseInIcon = keyframes`

@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const Wrapper = styled.section`
+export const Wrapper = styled.nav`
     background-color: ${props => {
         if(props.scroll >= 50){
             return "rgba(30, 30, 36, 0.7)"

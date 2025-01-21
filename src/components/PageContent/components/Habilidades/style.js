@@ -1,6 +1,7 @@
 import styled from "styled-components";
 
 export const Wrapper = styled.section`
+    height: 400px;
     padding: 50px 0;
     background-color: #20243A;
 `

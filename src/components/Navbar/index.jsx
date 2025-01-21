@@ -29,7 +29,7 @@ const Navbar = () => {
     return (
         <Wrapper scroll={scroll}>
             <Container>
-                <Logo href="#header" onClick={handleSmoothScroll}>Porti<span href="#header" onClick={handleSmoothScroll}>folio</span></Logo>
+                <Logo href="#header" onClick={handleSmoothScroll}>Port<span href="#header" onClick={handleSmoothScroll}>fólio</span></Logo>
                 <nav>
                     <Link href="#projetos" onClick={handleSmoothScroll}>Projetos</Link>
                     <Link href="#habilidades" onClick={handleSmoothScroll}>Habilidades</Link>
