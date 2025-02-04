@@ -1,7 +1,7 @@
-import styled, { keyframes } from "styled-components";
+import styled from "styled-components";
 
 export const Wrapper = styled.div`
-    height: 80%;
+    height: 50%;
     color: white;
     display: flex;
     gap: 50px;

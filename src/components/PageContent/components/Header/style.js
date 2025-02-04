@@ -45,14 +45,6 @@ export const SubTitle = styled.h2`
     }
 `
 
-export const Description = styled.p`
-    font-size: 25px;
-
-    & span {
-        color: #87F1FF;
-    }
-`
-
 export const Links = styled.div`
     display: flex;
     margin-top: 20px;

@@ -22,54 +22,42 @@ export const Container = styled.div`
     font-family: "Roboto Flex";
 `
 
-export const Agradecimento = styled.section`
-    width: 45%;
-    font-size: 22px;
-    text-align: justify;
-`
-
 export const FormArea = styled.section`
     width: 45%;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
     gap: 20px;
+    justify-content: space-around;
 `
 
-export const Nome = styled.input`
+export const ContainerNomeEmail = styled.div`
+    width: 40%;
+`
+
+export const Label = styled.label`
+    display: block;
+    margin: 0 0 10px;
+`
+export const Input = styled.input`
+    width: 90%;
     height: 30px;
     padding: 10px;
     border: none;
-    border-radius: 10px;
+    background-color: transparent;
+    color: white;
+    border-bottom: 2px solid white;
 `
 
-export const Email = styled.input`
-    height: 30px;
-    padding: 10px;
-    border: none;
-    border-radius: 10px;
-`
-
-export const Assunto = styled.input`
-    grid-column: span 2;
-    height: 30px;
-    padding: 10px;
-    border: none;
-    border-radius: 10px;
-`
-
+export const MensagemLabel = styled.label``
 export const Mensagem = styled.textarea`
-    grid-column: span 2;
     height: 90px;
     padding: 10px;
     border: none;
     border-radius: 10px;
 `
 
-export const SubmitArea = styled.div`
-    grid-column: span 2;
-    display: flex;
-    justify-content: end;
-`
+export const SubmitArea = styled.div``
 
 const mouseIn = keyframes`
     from{

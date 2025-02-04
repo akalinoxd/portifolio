@@ -1,8 +1,6 @@
 import { useState } from "react"
 
-import { FaInstagram } from "react-icons/fa";
-
-import { Wrapper, Title, Container, Agradecimento, FormArea, Nome, Email, Assunto, Mensagem, SubmitArea, Submit } from "./style"
+import { Wrapper, Title, Container, FormArea, ContainerNomeEmail, Label, Input, Mensagem, SubmitArea, Submit } from "./style"
 
 const Footer = () => {
 
@@ -14,17 +12,23 @@ const Footer = () => {
         <Wrapper id="contato">
             <Title>&lt; Contato /&gt;</Title>
             <Container>
-                <Agradecimento>
-                    <div>Gostou de algo que viu? Entre em contato! Estou ansioso em saber de que forma posso te ajudar 🫠</div>
-                    <div><FaInstagram /></div>
-                    <div></div>
-                    <div></div>
-                </Agradecimento>
                 <FormArea>
-                    <Nome type="text" placeholder="Insira seu nome" />
-                    <Email type="text" placeholder="Insira seu e-mail" />
-                    <Assunto type="text" placeholder="Insira o assunto" />
+                    <ContainerNomeEmail>
+                        <Label>Nome</Label>
+                        <Input type="text" placeholder="Insira seu nome" />
+                    </ContainerNomeEmail>
+
+                    <ContainerNomeEmail>
+                        <Label>Email</Label>
+                        <Input type="text" placeholder="Insira seu e-mail" />
+                    </ContainerNomeEmail>
+
+                    <Label>Assunto</Label>
+                    <Input type="text" placeholder="Insira o assunto" />
+
+                    <Label>Mensagem</Label>
                     <Mensagem name="" id="" placeholder="Insira a sua mensagem"></Mensagem>
+                    
                     <SubmitArea>
                         <Submit onMouseEnter={() => setHover("true")} onMouseLeave={() => setHover("false")} hover={hover}>Enviar</Submit>
                     </SubmitArea>

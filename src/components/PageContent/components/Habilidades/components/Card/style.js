@@ -48,7 +48,7 @@ export const Wrapper = styled.div`
             return mouseOutCard
         }
     }};
-    animation-duration: 0.3s;
+    animation-duration: 0.1s;
     background-color: #323751;
     display: flex;
     flex-direction: column;
@@ -95,7 +95,7 @@ export const Icon = styled.div`
             return mouseOutIcon
         }
     }};
-    animation-duration: 0.3s;
+    animation-duration: 0.1s;
     text-align: center;
 `
 
@@ -133,7 +133,7 @@ export const Title = styled.div`
             return mouseOutTitle
         }
     }};
-    animation-duration: 0.3s;
+    animation-duration: 0.1s;
     text-align: center;
     font-family: 'Jua';
 `
