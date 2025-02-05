@@ -1,10 +1,9 @@
-import { FaHtml5, FaCss3, FaReact, FaWordpress, FaDocker, FaGithubAlt } from "react-icons/fa";
-import { SiJavascript, SiMysql } from "react-icons/si";
+import { FaReact, FaWordpress, FaDocker, FaGithubAlt } from "react-icons/fa";
+import { SiJavascript, SiMysql, SiTypescript  } from "react-icons/si";
 
 export const linguagens = [
-    {nome: "HTML5", icon: <FaHtml5 />},
-    {nome: "CSS3", icon: <FaCss3 />},
     {nome: "Javascript", icon: <SiJavascript />},
+    {nome: "Typescript", icon: <SiTypescript />},
     {nome: "React", icon: <FaReact />},
     {nome: "WordPress", icon: <FaWordpress />},
     {nome: "MySQL", icon: <SiMysql />},

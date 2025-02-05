@@ -15,6 +15,7 @@ export const Container = styled.div`
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    gap: 30px;
 `
 
 export const Photo = styled.img`
@@ -22,14 +23,14 @@ export const Photo = styled.img`
     width: 300px;
     height: 300px;
     border-radius: 300px;
-    margin: 50px 0;
+    margin: 0;
     box-shadow: 0px 10px 10px rgb(54, 64, 92);
     border: none;
 `
 
 export const Title = styled.h1`
     font-size: 48px;
-    margin: 10px 0;
+    margin: 0;
 
     & span {
         color: #87F1FF;
@@ -38,7 +39,7 @@ export const Title = styled.h1`
 
 export const SubTitle = styled.h2`
     font-size: 30px;
-    margin: 10px 0;
+    margin: 0;
 
     & span {
         color: #87F1FF;
@@ -47,7 +48,7 @@ export const SubTitle = styled.h2`
 
 export const Links = styled.div`
     display: flex;
-    margin-top: 20px;
+    margin: 0;
     gap: 20px;
     font-size: 30px;
 
@@ -55,4 +56,21 @@ export const Links = styled.div`
         text-decoration: none;
         color: white;
     }
+`
+
+export const DownloadButton = styled.a`
+    text-decoration: none;
+    background-color: ${({hover}) => {
+        if(hover === "true"){
+            return "rgb(95, 186, 198)"
+        }else if(hover === "false"){
+            return "#87F1FF"
+        }else{
+            return "#87F1FF"
+        }
+    }};
+    padding: 15px 20px;
+    font-size: 18px;
+    border-radius: 50px;
+    color: black;
 `

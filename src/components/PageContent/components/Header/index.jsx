@@ -1,10 +1,16 @@
+import { useState } from "react";
+
 import { FaGithubAlt, FaLinkedin } from "react-icons/fa";
 
 import perfil from '../../../../imgs/foto perfil.jpg'
+import cv from '../../../../docs/cv.pdf'
 
-import { Wrapper, Container, Photo, Title, SubTitle, Links } from './style'
+import { Wrapper, Container, Photo, Title, SubTitle, Links, DownloadButton } from './style'
 
 const Header = () => {
+
+    const [hover, setHover] = useState("")
+
     return (
         <>
             <Wrapper id='header'>
@@ -23,6 +29,17 @@ const Header = () => {
                         <a href="https://github.com/akalinoxd" target="_blank" rel="noreferrer"><FaGithubAlt /></a>
                         <a href="https://www.linkedin.com/in/joaovitor-frontend-dev/" target="_blank" rel="noreferrer"><FaLinkedin /></a>
                     </Links>
+                    <div>
+                        <DownloadButton
+                            href={cv} download="João Vitor Andrade Cavalcante - Desenvolvedor Junior"
+                            target="_blank"
+                            hover={hover}
+                            onMouseEnter={() => setHover("true")}
+                            onMouseLeave={() => setHover("false")}
+                        >
+                            Download CV
+                        </DownloadButton>
+                    </div>
                 </Container>
             </Wrapper>
         </>

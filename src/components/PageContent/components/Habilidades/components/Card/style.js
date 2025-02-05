@@ -97,6 +97,7 @@ export const Icon = styled.div`
     }};
     animation-duration: 0.1s;
     text-align: center;
+    margin-top: 5px;
 `
 
 const mouseInTitle = keyframes`
